@@ -45,7 +45,8 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-  '/tap': 'TapController.tap'
+  '/tap': 'TapController.tap',
+  '/count': 'TapController.count'
 
 
 };

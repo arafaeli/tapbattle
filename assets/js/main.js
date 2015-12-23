@@ -25,4 +25,13 @@ $(document).ready(function() {
         game[data['side']] = data['taps'];
         game.update(data['side']);
     });
+    
+    io.socket.get('/count', function(data) {
+        for ( i of data)
+        {
+            console.log(i);
+            game[i.side] = i.taps;
+            game.update(i.side);
+        }
+    });
 });
