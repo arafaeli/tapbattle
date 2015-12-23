@@ -8,7 +8,6 @@
 module.exports = {
 	tap: function(req, res) {
 	    params = req.params.all();
-	    console.log(params['side']);
 	    if(params['side'] == undefined) return res.notFound();
 	    
 	    var data = { side: params['side'] };
