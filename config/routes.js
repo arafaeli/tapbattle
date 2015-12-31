@@ -45,6 +45,10 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+  '/game': {
+    view: 'game'
+  },
+  
   '/tap': 'TapController.tap',
   '/count': 'TapController.count'
 
